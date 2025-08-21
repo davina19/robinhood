@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  robinhood:
+    image: python:3.11-slim
+    container_name: robinhood
+    working_dir: /app
+    environment:
+      - TZ=${TZ}
+    volumes:
+      - ./:/app
+      - sessions:/app/app/storage/sessions
+      - media:/app/app/storage/media
+    command: ["bash", "-lc", "./run.sh"]
+    restart: unless-stopped
+
+volumes:
+  sessions:
+  media:

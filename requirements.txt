@@ -1,0 +1,9 @@
+aiogram==3.8.0
+pyrogram==2.0.106
+tgcrypto==1.2.5
+SQLAlchemy==2.0.31
+aiosqlite==0.20.0
+apscheduler==3.10.4
+python-dotenv==1.0.1
+pydantic==2.8.2
+pytz==2024.1
